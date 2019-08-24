@@ -13,6 +13,7 @@ def handle_request(client_connection):
     Hello World!
     """
     client_connection.sendall(http_response)
+    time.sleep(60)
 
 def serve_forever():
     listen_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
